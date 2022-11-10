@@ -14,6 +14,16 @@ public class BazaDao {
     private static BazaDao instanca = null;
 
     /**
+     * Dodavanjem privatnog konstruktora mi smo ogranicili onog ko zeli instancirati klasu, da to mora uraditi
+     * sa metodom getInstance() u suprotnom nece moci drugacije. Ta metoda mu svakako nece dati da instancira vise
+     * instanci ove klase, samim tim dobili smo singleton pattern.
+     * KLJUČNO - Privatni konstruktor
+     */
+    private BazaDao() {
+
+    }
+
+    /**
      * Metoda getInstance() ne da pravljenje vise od jedne instance ove klase
      * Poenta svega ovoga je u tome da vam vise objekata moze raditi sa jednom instancom, vise ljudi isti posao.
      * @return
