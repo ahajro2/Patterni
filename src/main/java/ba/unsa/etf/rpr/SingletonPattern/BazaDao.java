@@ -15,6 +15,7 @@ public class BazaDao {
 
     /**
      * Metoda getInstance() ne da pravljenje vise od jedne instance ove klase
+     * Poenta svega ovoga je u tome da vam vise objekata moze raditi sa jednom instancom, vise ljudi isti posao.
      * @return
      */
     public static BazaDao getInstance() {
